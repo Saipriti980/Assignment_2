@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workspace Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d4bfe4;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            /* width: 200px;
+            height: 100%;
+            background-color: #acecf0;
+            padding: 20px;
+            position: fixed; */
+            background-color: #acecf0;
+            width: 200px;
+            height: 100%;
+            position:fixed;
+            top: 0;
+            left: 0;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        .sidebar a {
+            display: block;
+            color: #333;
+            padding: 10px 0;
+            text-decoration: none;
+            font-weight:bold;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .sidebar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .sidebar a:hover {
+            background-color: #f2f6a1;
+            border-radius: 5%;
+            padding-left: 10px;
+        }
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .search-bar {
+            margin-bottom: 20px;
+            display:contents;
+        }
+        .search-bar input {
+            padding: 10px;
+            width: 200px;
+            font-size: 16px;
+            float: right;
+        }
+        /* .search-bar {
+            float: right;
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
+            margin-bottom: 20px;
+        }
+        .search-bar input[type="search"] {
+            padding: 20px;
+            font-size: 20px;
+        } */
+        table {
+            width: 100%;
+            border-collapse:collapse;
+            margin-bottom: 100%;
+        }
+        /* th, td {
+            padding: 10px;
+            text-align: center;
+        } */
+        th {
+            background-color: #f2e5f7;
+            /* background-color: #a56ef007; */
+        }
+        table, th, td {
+            border: 1px solid #000e09;
+            padding: 10px;
+            text-align: center;
+        }
+        .pagination {
+            margin-top: 20px;
+            text-align:center;
+            display:flexbox;
+        }
+        .pagination button {
+            padding: 10px 15px;
+            margin: 0 5px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">Workspace</div>
+            <a href="#">Home</a>
+            <a href="#" class="active">Customers</a>
+            <a href="#">Departments</a>
+            <a href="#">Media</a>
+            <a href="#">My Account</a>
+        </div>
+        <div class="content">
+            <div class="search-bar">
+                <input type="text" placeholder="Search in Customers">
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Customer ID</th>
+                        <th>Department ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Total Media Size</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>JRYT456</td>
+                        <td>UHDG</td>
+                        <td>JOHN</td>
+                        <td>skadj@gmail.com</td>
+                        <td>2 GB</td>
+                    </tr>
+                    <tr>
+                        <td>JHSAG636</td>
+                        <td>ASDFJ</td>
+                        <td>JANE</td>
+                        <td>skadj@gmail.com</td>
+                        <td>0.4 GB</td>
+                    </tr>
+                    <tr>
+                        <td>ASJHSA77</td>
+                        <td>SAFEF</td>
+                        <td>BOB</td>
+                        <td>skadj@gmail.com</td>
+                        <td>200 GB</td>
+                    </tr>
+                    <tr>
+                        <td>KSAHKJ366</td>
+                        <td>AFEEE</td>
+                        <td>MARY</td>
+                        <td>skadj@gmail.com</td>
+                        <td>50 GB</td>
+                    </tr>
+                    <tr>
+                        <td>SAKHJD35</td>
+                        <td>REYER</td>
+                        <td>KARAN</td>
+                        <td>skadj@gmail.com</td>
+                        <td>45 GB</td>
+                    </tr>
+                    <tr>
+                        <td>KKHUASU33</td>
+                        <td>HJHGF</td>
+                        <td>CHRISSY</td>
+                        <td>skadj@gmail.com</td>
+                        <td>500 GB</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="pagination">
+                <button>&lt;</button>
+                <button>1</button>
+                <button>&gt;</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
